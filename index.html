@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery RGB to Hexa</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.decimal-remover.js"></script>
+    <script src="../RgbToHexa/jquery.rbgtohexa.js"></script>
+    <script src="/DecimalRemover/Visitor_Tracker/jquery.visitor_tracker.js"></script>
+</head>
+
+<body>
+    <input type="text" id="t3" value="rgb(100,200,133)">
+    <input type="text" id="resultDisplay2">
+    <script>
+        $(document).on('keyup', function () {
+            $('#t3').RGB2Hexa({
+                displayEle: '#resultDisplay2'
+            });
+
+
+        });
+
+        
+
+    </script>
+</body>
+
+</html>
